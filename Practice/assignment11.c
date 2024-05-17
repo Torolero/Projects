@@ -1,22 +1,16 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(void)
 {
-    int testScores;
-    do
-    {
-
-        printf("Enter a test score:");
-        scanf("%i", &testScores);
-
-    } while (testScores <= 0 || testScores > 100);
+    int testScores[10] = {};
 
     char decision;
     float average;
-    bool trueFalse = 1;
 
-    do
+    printf("Enter a test score:");
+    scanf("%i", &testScores[0]);
+
+    for (int i = 1; i <= 7; i++)
     {
         printf("Would you like to continue? Y/N: ");
         scanf("%s", &decision);
@@ -24,13 +18,29 @@ int main(void)
         if (decision == 'y' || decision == 'Y')
         {
             printf("Enter a test score:");
-            scanf("%i", &testScores);
+            scanf("%i", &testScores[i]);
         }
-        else
+        else if (decision == 'n' || decision == 'N')
         {
             printf("%f is the average.\n", average);
-            trueFalse = 0;
+            break;
         }
+    }
 
-    } while (trueFalse);
+    printf("%i, %i, %i\n", testScores[0], testScores[1], testScores[2]);
+    return 0;
+
+    /*int array[3] = {};
+    printf("Enter 1 commands: ");
+    scanf("%i", &array[0]);
+
+    printf("Enter 2 commands: ");
+    scanf("%i", &array[1]);
+
+    printf("Enter 3 commands: ");
+    scanf("%i", &array[2]);
+
+    printf("%i, %i, %i", array[0], array[1], array[2]);*/
 }
+
+
