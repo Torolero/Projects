@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -6,5 +7,6 @@ int main(void)
     printf("How many times would you like to flip the coin? ");
     scanf("%i", &coinFlips);
 
-    printf("This number: %i", coinFlips);
+    int rand(void);
+https: // www.tutorialspoint.com/rand-and-srand-in-c
 }
