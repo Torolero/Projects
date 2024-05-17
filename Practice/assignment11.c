@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    float testScores[10] = {};
+    float testScores[10] = {1};
 
     char decision;
     float average;
