@@ -8,5 +8,6 @@ int main(void)
     scanf("%i", &coinFlips);
 
     int rand(void);
+    _WCHAR_T_DEFINED
 https: // www.tutorialspoint.com/rand-and-srand-in-c
 }
