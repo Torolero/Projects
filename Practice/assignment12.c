@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
@@ -8,17 +9,11 @@ int main(void)
     printf("How many times would you like to flip the coin? ");
     scanf("%i", &coinFlips);
 
-    void srand(unsigned int coinFlips);
+    srand(time(0));
 
     int heads = rand() % coinFlips;
-    int tails = rand() % coinFlips;
+    int tails = coinFlips - heads;
+    //The program works until here, it will give you two random values between 0 and your input. Now I need to figure out how to make them equal to user input when added together.
 
-    int rand(void);
-<<<<<<< HEAD
     printf("After flipping the coin %i times, the results were\n %i heads\n %i tails\n", coinFlips, heads, tails);
 }
-=======
-    _WCHAR_T_DEFINED
-https: // www.tutorialspoint.com/rand-and-srand-in-c
-}
->>>>>>> 04647de6ca2d05b909595e2512c2989c54b8c1d1
