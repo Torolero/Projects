@@ -2,7 +2,11 @@
 
 int main(void)
 {
-    int array[10];
+	int array[10];
 
-    printf("%d", array);
+    printf("%d\n", array);
+	printf("%p\n", array);
+	printf("%p\n", &array[0]);
+
+	return 0;
 }
