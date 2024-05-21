@@ -2,8 +2,12 @@
 
 int main(void)
 {
-    float test = 10;
-    float *ptr = &test;
+    int test = 10;
+    int *ptr = &test;
+    int* prt = &test;
 
-    printf("%p", ptr);
+    printf("%d\n", test);
+    printf("%p\n", test);
+    printf("%p\n", ptr);
+    printf("%d\n", *prt);
 }
