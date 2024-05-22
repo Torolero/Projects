@@ -18,6 +18,13 @@ struct secondStruct
 int main(void)
 {
     struct secondStruct Struct2;
+
+    Struct2.member1.firstName;
+    Struct2.member1.lastName;
+    Struct2.member1.employeeId;
+    Struct2.member1.ssn;
+    Struct2.member1.title;
+
     Struct2.member2.firstName;
     Struct2.member2.lastName;
     Struct2.member2.employeeId;
@@ -25,21 +32,43 @@ int main(void)
     Struct2.member2.title;
 
     printf("Enter the employee's first name: ");
-    scanf("%s", Struct2.member1.firstName);
+    scanf("%s", &Struct2.member1.firstName);
 
     printf("Enter the employee's last name: ");
-    scanf("%s", Struct2.member1.lastName);
+    scanf("%s", &Struct2.member1.lastName);
 
     printf("Enter the employee's ID number: ");
-    scanf("%i", Struct2.member1.employeeId);
+    scanf("%i", &Struct2.member1.employeeId);
 
     printf("Enter the last four digits of the employee's SSN: ");
-    scanf("%i", Struct2.member1.ssn);
+    scanf("%i", &Struct2.member1.ssn);
 
     printf("Enter the employee's job title: ");
-    scanf("%s", Struct2.member1.title);
+    scanf("%s", &Struct2.member1.title);
 
+    printf("\n\n");
+
+    printf("Enter the employee's first name: ");
+    scanf("%s", &Struct2.member2.firstName);
+
+    printf("Enter the employee's last name: ");
+    scanf("%s", &Struct2.member2.lastName);
+
+    printf("Enter the employee's ID number: ");
+    scanf("%i", &Struct2.member2.employeeId);
+
+    printf("Enter the last four digits of the employee's SSN: ");
+    scanf("%i", &Struct2.member2.ssn);
+
+    printf("Enter the employee's job title: ");
+    scanf("%s", &Struct2.member2.title);
+
+    printf("\n\n");
+    
     printf("Employee information for %s %s:\n", Struct2.member1.firstName, Struct2.member1.lastName);
-    printf("ID: %i, SSN: %d, title: %s", Struct2.member1.employeeId, Struct2.member1.ssn, Struct2.member1.title);
+    printf("ID: %i\nSSN: %d\nTitle: %s Engineer\n\n", Struct2.member1.employeeId, Struct2.member1.ssn, Struct2.member1.title);
+
+    printf("Employee information for %s %s:\n", Struct2.member2.firstName, Struct2.member2.lastName);
+    printf("ID: %i\nSSN: %d\nTitle: %s Engineer\n", Struct2.member2.employeeId, Struct2.member2.ssn, Struct2.member2.title);
     
 }
