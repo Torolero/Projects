@@ -24,8 +24,6 @@ int main(void)
     Struct2.member2.ssn;
     Struct2.member2.title;
 
-    // for (int i = 0; i = 2; i++)
-    //{
     printf("Enter the employee's first name: ");
     scanf("%s", Struct2.member1.firstName);
 
@@ -35,12 +33,13 @@ int main(void)
     printf("Enter the employee's ID number: ");
     scanf("%i", Struct2.member1.employeeId);
 
-    printf("Enter the last four d)igits of the employee's SSN: ");
+    printf("Enter the last four digits of the employee's SSN: ");
     scanf("%i", Struct2.member1.ssn);
 
     printf("Enter the employee's job title: ");
     scanf("%s", Struct2.member1.title);
 
     printf("Employee information for %s %s:\n", Struct2.member1.firstName, Struct2.member1.lastName);
-    //}
+    printf("ID: %i, SSN: %d, title: %s", Struct2.member1.employeeId, Struct2.member1.ssn, Struct2.member1.title);
+    
 }
