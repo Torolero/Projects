@@ -41,5 +41,4 @@ int main(void)
 
     printf("Employee information for %s %s:\n", Struct2.member1.firstName, Struct2.member1.lastName);
     printf("ID: %i, SSN: %d, title: %s", Struct2.member1.employeeId, Struct2.member1.ssn, Struct2.member1.title);
-    
 }
