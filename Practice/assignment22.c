@@ -2,9 +2,11 @@
 
 struct stats
 {
-    int points;
-    int games;
+    float points;
+    float games;
 };
+
+
 
 int main(void)
 {
@@ -15,20 +17,20 @@ int main(void)
     {
         //player[i].games = i;
         printf("Enter Player %i's point total:", i + 1);
-        scanf("%i", &players.points);
+        scanf("%f", &player[i].points);
 
         printf("Enter Player %i's game total:", i + 1);
-        scanf("%i", &players.games);
+        scanf("%f", &players.games);
     }
 
-    /*for (int j = 0; j < 5; j++)
+    for (int j = 0; j < 5; j++)
     {
-        int average = (player[j].points) / (5);
-        printf("%i", average);
-    }*/
+        float average = (player[j].points) / (players.games);
+        printf("Player %i's scoring average was %.2f ppg.\n",j +1, average);
+    }
 
-    int player1 = (player[0].points) / (5);
-    printf("%i", player1);
+    //int player1 = /*(player[0].points) / (5);*/ (player[0].points) / (players.games);
+    //printf("%i", player1);
 
     /*int player2 = (player[1].points) / (players.games);
     printf("%i", player2);
