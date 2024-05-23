@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(void)
 {
     float players[4][5] = {{0}, {0}};
